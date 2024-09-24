@@ -11,6 +11,7 @@ async function PostsPage() {
         <div>
             Posts Page
             {data.map((post) => {
+                console.log(post)
                 return (
                     <Link style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', width: '70%', margin: '10px auto' }} href={`/posts/${post.id}`}>
                         <h2 style={{ width: '100%', textAlign: 'center', backgroundColor: 'white', color: 'black' }}>
@@ -19,8 +20,6 @@ async function PostsPage() {
                     </Link>
                 )
             })}
-            {/* <p>{data.title}</p> */}
-            {/* <Todo /> */}
         </div>
     )
 }
